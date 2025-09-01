@@ -279,14 +279,31 @@ function draw() {
     orbitControl();
     pointLight(255, 255, 255, valor / 3, valor / 2, 50);
     specularMaterial(255);
-    shininess(50);
-    metalness(1);
+    shininess(20);
+    metalness(20);
 
     // Ojo con el push()
     push();
     fill("red");
-    translate(0, -valor / 4, -valor / 7);
-    sphere(valor / 4);
+    translate(30, -valor / 20, -valor / 5);
+    // Enable orbiting with the mouse.
+  orbitControl();
+
+  // Draw the torus.
+  // Set its radius to 30.
+  torus(30);
+    
+     // Ojo con el push()
+    push();
+    fill("red");
+    translate(50, -valor / 50, -valor / 5);
+    // Enable orbiting with the mouse.
+  orbitControl();
+
+  // Draw the torus.
+  // Set its radius to 30.
+    
+  torus(30);
     pop();
     // Ojo con el pop()
     // Ojo con el push()
