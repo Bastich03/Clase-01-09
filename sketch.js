@@ -1,25 +1,25 @@
 const trabajitos = [
    {
         id: 1,
-        photo: "https://picsum.photos/id/1/400/300",
+        photo: "https://github.com/Bastich03/Clase-01-09/blob/main/img/Infografia%20Final%20Tiny.webp?raw=true",
         title: "Infografia Terapelos",
         description: "Trabajo de Ergonomia, con Prof. Claudio Ribalta.",
     },
     {
         id: 2,
-        photo: "https://picsum.photos/id/122/400/300",
+        photo: "https://github.com/Bastich03/Clase-01-09/blob/main/img/Artefacto%20Fantasioso%20Tiny.webp?raw=true",
         title: "Artefacto Fantasioso",
         description: "Trabajo de Proyecto III, con Prof. Pamela Petruska",
     },
     {
         id: 3,
-       photo: "https://picsum.photos/id/156/400/300",
+       photo: "https://github.com/Bastich03/Clase-01-09/blob/main/img/Infografia%20Artelier%20Terminada%20Tiny.webp?raw=true",
         title: "Infografía Artelier",
         description: "Trabajo de Procesos y Prototipos, con Prof. Pamela Fuentes",
     },
     {
         id: 4,
-             photo: "https://picsum.photos/id/121/400/300",
+             photo: "https://github.com/Bastich03/Clase-01-09/blob/main/img/INFOGRAFIA%20TINY.webp?raw=true",
         title: "Infografía Cámara",
         description: "Trabajo de Configuración Visual II, con Prof. Juan Calderon",
     },]
