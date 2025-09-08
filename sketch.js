@@ -1,5 +1,6 @@
 const trabajitos = [
    {
+       
         id: 1,
         photo: "https://github.com/Bastich03/Clase-01-09/blob/main/img/Infografia%20Final%20Tiny.webp?raw=true",
         title: "Infografia Terapelos",
@@ -22,7 +23,7 @@ const trabajitos = [
              photo: "https://github.com/Bastich03/Clase-01-09/blob/main/img/INFOGRAFIA%20TINY.webp?raw=true",
         title: "Infografía Cámara",
         description: "Trabajo de Configuración Visual II, con Prof. Juan Calderon",
-    },]
+    },];
 const datos= [
     {
         id: 1,
@@ -277,44 +278,107 @@ function setup() {
 function draw() {
     background("white");
     orbitControl();
+    ambientLight(255, 255, 255);
     pointLight(255, 255, 255, valor / 3, valor / 2, 50);
     specularMaterial(255);
-    shininess(20);
+    shininess(100);
     metalness(20);
-
-    // Ojo con el push()
-    push();
-    fill("red");
-    translate(30, -valor / 20, -valor / 5);
-    // Enable orbiting with the mouse.
-  orbitControl();
-
-  // Draw the torus.
-  // Set its radius to 30.
-  torus(30);
     
-     // Ojo con el push()
-    push();
-    fill("red");
-    translate(50, -valor / 50, -valor / 5);
-    // Enable orbiting with the mouse.
-  orbitControl();
+push();
+    fill('rgb(247, 213, 176)');
+    sphere(30);
 
-  // Draw the torus.
-  // Set its radius to 30.
+pop();
     
-  torus(30);
-    pop();
-    // Ojo con el pop()
-    // Ojo con el push()
-    push();
-    fill("blue");
-    sphere(valor / 5);
-    pop();
-    // Ojo con el pop()
+push();
+    fill('rgb(0, 0, 0)');
+    translate(15, -5, 30);
+    torus(10, 2);
+    
+pop();
 
+push();
+    fill('rgb(0, 0, 0)');
+    translate(-15, -5, 30);
+    torus(10, 2);
+    
+pop();
+    
+push();
+    fill('rgb(255, 255, 255)');
+    translate(-15, -5, 25);
+    sphere(10);
+    
+pop();
+    
+push();
+    fill('rgb(255, 255, 255)');
+    translate(15, -5, 25);
+    sphere(10);
+    
+pop();
+    
+push();
+    fill('rgb(0, 0, 0)');
+    translate(15, -5, 33);
+    sphere(3);
+pop();
+    
+push();
+    fill('rgb(0, 0, 0)');
+    translate(-15, -5, 33);
+    sphere(3);
+pop();
+    
+push();
+
+    fill('rgb(255, 0, 0)');
+    translate(0, -25, 0);
+    cylinder(30, 3);
+pop();
+    
+push();
+    fill('rgb(255, 0, 0)');
+    translate(8, -50, 0);
+  rotateX(-PI); // Rotate -45 degrees around X-axis
+  cone(17, 50); // Draw the cone
+
+pop();
+    
+push();
+    fill('rgb(255, 0, 0)');
+    translate(-8, -50, 0);
+  rotateX(-PI); // Rotate -45 degrees around X-axis
+  cone(17, 50); // Draw the cone
+
+pop();
+
+push();
+fill('rgb(255, 255, 255)');
+translate(-8, -31, 0);
+cylinder(17, 5);
+pop();
+
+push();
+fill('rgb(255, 255, 255)');
+translate(8, -31, 0);
+cylinder(17, 5);
+pop();
+
+push();
+    fill('rgb(244, 163, 151)');
+    translate(-15, 8, 20);
+    ellipsoid(8, 3);
+pop();
+    
+push();
+    fill('rgb(244, 163, 151)');
+    translate(15, 8, 20);
+    ellipsoid(8, 3);
+pop();
 }
-
 function windowResized() {
+    resizeCanvas(valor, valor);
+}
     resizeCanvas(valor, valor);
 }
