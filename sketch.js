@@ -381,4 +381,3 @@ function windowResized() {
     resizeCanvas(valor, valor);
 }
     resizeCanvas(valor, valor);
-}
